@@ -1,0 +1,51 @@
+<h3>
+  List of Employees
+</h3>
+
+<div class="row">
+  <div class="col-sm-4">
+    <ul class="list-group">
+      <li *ngFor="let employee of listOfEmployees"
+        class="list-group-item">
+        {{ employee.first_name }} - {{ employee.last_name }}
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-sm-8">
+    <table class="table table-bordered">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>City</th>
+      </tr>
+      <tr *ngFor="let employee of listOfEmployees"
+        (click)="setActiveEmployee(employee)">
+        <td>{{ employee.first_name }} </td>
+        <td>{{ employee.last_name }} </td>
+        <td>{{ employee.city }} </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<employee-details [employee]="activeEmployee"
+        [project]="myLiveProject"></employee-details>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

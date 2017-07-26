@@ -1,0 +1,21 @@
+<h1>
+  {{ title }}
+</h1>
+
+<!--<home></home>-->
+
+Name: {{ name }}
+<br>
+2way databound - <input type="text" [(ngModel)]="name" />
+
+<br>
+<br>
+<br>
+Enter your name :
+<input type="text" [value]="name" />
+
+<img [src]="imgSource" />
+
+
+
+<input type="submit" value="Log My Request" (click)="submitName($event)" />

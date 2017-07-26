@@ -30,7 +30,7 @@ export class EmployeesComponent implements OnInit {
 
   dummyEmployee: Employee = {
     first_name: 'dummy',
-    lst_name: 'dummy',
+    last_name: 'dummy',
     city: 'junk-city'
   };
   activeEmployee: Employee;

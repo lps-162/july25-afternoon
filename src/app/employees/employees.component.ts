@@ -49,4 +49,11 @@ export class EmployeesComponent implements OnInit {
     this.activeEmployee = employee;
   }
 
+  handleEmployeeCreation(eventInfo) {
+    console.log('Employee handling');
+    console.log(eventInfo.employee);
+    let employee = eventInfo.employee;
+    this.listOfEmployees.push(eventInfo.employee);
+  }
+
 }

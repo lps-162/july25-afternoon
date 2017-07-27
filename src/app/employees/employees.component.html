@@ -29,8 +29,17 @@
   </div>
 </div>
 
-<employee-details [employee]="activeEmployee"
+<div class="col-sm-6"> 
+  <employee-create (employeeCreated)="handleEmployeeCreation($event)" >
+
+  </employee-create>
+</div>
+
+<div class="col-sm-6">
+  <employee-details [employee]="activeEmployee"
         [project]="myLiveProject"></employee-details>
+
+</div>
 
 
 <br>
